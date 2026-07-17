@@ -7,7 +7,7 @@
 <meta name="description" content="Hardware engineering portfolio — PCB design, signal integrity, power electronics. Alberto Marrone, MSc Electronics Engineering, Politecnico di Milano.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a href="#top" class="mark" aria-label="Alberto Marrone — home">
-      <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
+      <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
         <circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="1.4"/>
         <line x1="16" y1="2" x2="16" y2="10" stroke="currentColor" stroke-width="1.4"/>
         <line x1="16" y1="22" x2="16" y2="30" stroke="currentColor" stroke-width="1.4"/>
@@ -23,11 +23,11 @@
         <line x1="22" y1="16" x2="30" y2="16" stroke="currentColor" stroke-width="1.4"/>
         <circle cx="16" cy="16" r="2" fill="currentColor"/>
       </svg>
-      <span>A. Marrone</span>
+      <span>Alberto Marrone</span>
     </a>
     <nav>
-      <a href="#projects">Projects</a>
       <a href="#about">About</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -35,131 +35,87 @@
 
 <main id="top">
 
+  <!-- ============ HERO ============ -->
   <section class="hero">
-    <div class="wrap">
-      <p class="eyebrow">HARDWARE ENGINEERING — REV 1.0</p>
-      <h1>Alberto Marrone</h1>
-      <p class="role">MSc Electronics Engineering, Politecnico di Milano &middot; Erasmus at UPV Valencia</p>
-      <p class="thesis">I design, build, fabricate, and validate real electronic hardware — from schematic to bench measurement.</p>
-      <div class="hero-links">
-        <a class="btn btn-primary" href="mailto:alberto.marrone02@gmail.com">Email me</a>
-        <a class="btn" href="https://github.com/Alberto0235" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/alberto-marrone-444192274" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">HARDWARE ENGINEERING — REV 1.0</p>
+        <h1>Alberto Marrone</h1>
+        <p class="role">MSc Electronics Engineering Student — Politecnico di Milano</p>
+        <p class="thesis">I design, build, fabricate, and validate real electronic hardware — from schematic to bench measurement.</p>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="mailto:REPLACE_WITH_YOUR_EMAIL">Email me</a>
+          <a class="btn" href="https://github.com/Alberto0235" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/alberto-marrone-444192274" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-illustration tech-frame">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <svg viewBox="0 0 480 400" class="stack-svg" aria-hidden="true">
+          <!-- exploded 4-layer PCB stack -->
+          <g>
+            <rect x="102" y="212" width="300" height="52" rx="5" fill="#0f3d2e" stroke="#0a2a20" stroke-width="1"/>
+            <rect x="88" y="176" width="300" height="52" rx="5" fill="#c7a24c" stroke="#a3833a" stroke-width="1"/>
+            <rect x="74" y="140" width="300" height="52" rx="5" fill="#efe0ad" stroke="#c7a24c" stroke-width="1"/>
+            <rect x="60" y="104" width="300" height="52" rx="5" fill="#fffdf8" stroke="#dbd6c8" stroke-width="1.2"/>
+          </g>
+          <!-- copper traces on top layer -->
+          <g fill="none" stroke="#b8892f" stroke-width="1.6" stroke-linecap="round">
+            <path d="M90 122 h60 v14 h50"/>
+            <path d="M300 116 h-40 v10 h-70 v14"/>
+            <path d="M120 150 h30"/>
+          </g>
+          <circle cx="150" cy="136" r="3" fill="#14181c"/>
+          <circle cx="230" cy="140" r="3" fill="#14181c"/>
+          <circle cx="150" cy="150" r="2.4" fill="#14181c"/>
+          <!-- leader / callout -->
+          <line x1="374" y1="120" x2="430" y2="120" stroke="#5b6570" stroke-width="1"/>
+          <text x="434" y="124" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5b6570">L1 · SIGNAL</text>
+          <line x1="386" y1="230" x2="430" y2="230" stroke="#5b6570" stroke-width="1"/>
+          <text x="434" y="234" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5b6570">GND PLANE</text>
+        </svg>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="projects">
-    <div class="wrap">
-      <h2><span class="tag-no">01</span> Selected Projects</h2>
-
-      <!-- PROJECT 1 — USB HUB -->
-      <article class="project" data-status="validated">
-        <div class="project-media">
-          <div class="img-placeholder">
-            <span>PCB top view — replace with<br><code>images/usb-hub/pcb-top.jpg</code></span>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-head">
-            <h3>USB 3.2 Gen 1 — 4-Port Hub</h3>
-            <span class="status">Validated — bring-up complete</span>
-          </div>
-          <p class="project-desc">A 6-layer, impedance-controlled USB 3.2 hub carried from schematic through fabrication, assembly, and bench validation — including full SuperSpeed enumeration and measured throughput.</p>
-          <ul class="chips">
-            <li>TI TUSB8044A</li>
-            <li>90&Omega; controlled differential impedance</li>
-            <li>6-layer stackup</li>
-            <li>USB-C cold socket, hardware-only</li>
-            <li>DFM review (PCBWay)</li>
-            <li>5 Gbps SuperSpeed measured</li>
-          </ul>
-          <p class="recruiter-note"><strong>Why it matters:</strong> this is the project that closes the full loop — signal integrity analysis, a real DFM review with a manufacturer, and bench measurements (102 MB/s SuperSpeed throughput, verified power-sequencing timing) rather than a simulation stopping at layout. Also includes a Python HID-to-I2C EEPROM programming tool, written from scratch.</p>
-          <a class="project-link" href="https://github.com/Alberto0235/USB3.2-Hub-4Port" target="_blank" rel="noopener">View repository &rarr;</a>
-        </div>
-      </article>
-
-      <!-- PROJECT 2 — GaN LLC CONVERTER -->
-      <article class="project" data-status="simulation">
-        <div class="project-media">
-          <div class="img-placeholder">
-            <span>LLC gain plot / efficiency chart — replace with<br><code>images/gan-converter/eff-vs-power.png</code></span>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-head">
-            <h3>GaN Full-Bridge LLC Resonant Converter</h3>
-            <span class="status">Simulation — design complete, not built</span>
-          </div>
-          <p class="project-desc">Full-bridge GaN LLC resonant converter designed as the front-end stage of a 400&nbsp;W photovoltaic micro-inverter — 97.88% simulated efficiency at 100&nbsp;kHz with zero-voltage switching across the full input range.</p>
-          <ul class="chips">
-            <li>GaN devices (EPC / GaN Systems)</li>
-            <li>Full-bridge LLC resonant topology</li>
-            <li>100 kHz&ndash;1 MHz sweep</li>
-            <li>Custom C sizing tool</li>
-            <li>LTspice, vendor SPICE models</li>
-          </ul>
-          <p class="recruiter-note"><strong>Why it matters:</strong> a real topology trade-off study (5 candidate topologies compared on efficiency before choosing LLC) plus a custom C tool for resonant-tank sizing — evidence of engineering judgment, not a tutorial followed end to end. Shown honestly as simulation-stage, not built hardware.</p>
-          <a class="project-link" href="https://github.com/Alberto0235/LLC-GaN-Microinverter" target="_blank" rel="noopener">View repository &rarr;</a>
-        </div>
-      </article>
-
-      <!-- PROJECT 3 — STM32 BOARD (placeholder, repo not supplied) -->
-      <article class="project" data-status="team">
-        <div class="project-media">
-          <div class="img-placeholder">
-            <span>Board photo / Altium 365 screenshot — replace with<br><code>images/stm32-board/board.jpg</code></span>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-head">
-            <h3>STM32F746ZG Application Board</h3>
-            <span class="status">Team project — UPV, Altium</span>
-          </div>
-          <p class="project-desc">A three-person team project designing an STM32F746ZG application board in Altium Designer, using a shared Altium 365 workflow, during Erasmus at Universitat Polit&egrave;cnica de Val&egrave;ncia.</p>
-          <ul class="chips">
-            <li>STM32F746ZG</li>
-            <li>Altium Designer</li>
-            <li>Altium 365 real-time collaboration</li>
-            <li>Schematic + PCB layout</li>
-          </ul>
-          <p class="recruiter-note"><strong>Why it matters:</strong> most student portfolios show only solo work. This demonstrates a professional, PLM-style collaborative design workflow across a team.</p>
-          <a class="project-link" href="#" target="_blank" rel="noopener">TODO — insert repo link once public &rarr;</a>
-        </div>
-      </article>
-
-      <!-- PROJECT 4 — DRSSTC -->
-      <article class="project" data-status="wip">
-        <div class="project-media">
-          <div class="img-placeholder">
-            <span>Assembled board / bring-up bench shot — replace with<br><code>images/drsstc/bringup.jpg</code></span>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-head">
-            <h3>DRSSTC Fiber-Optic Interrupter</h3>
-            <span class="status">In progress — hardware assembled, bring-up underway</span>
-          </div>
-          <p class="project-desc">A galvanically isolated, hand-soldered STM32F405 control board for a Tesla-coil driver, with a hardware-only E-brake safety chain and controlled-impedance USB / FSMC / SDIO routing. Currently mid bring-up.</p>
-          <ul class="chips">
-            <li>STM32F405</li>
-            <li>Fiber-optic galvanic isolation</li>
-            <li>Hardware E-brake, firmware-independent</li>
-            <li>4-layer controlled impedance (90&Omega; USB, 50&Omega; FSMC/SDIO)</li>
-            <li>KiCad</li>
-          </ul>
-          <p class="recruiter-note"><strong>Why it matters:</strong> the safety architecture. The E-brake physically de-energizes the output and halts MCU timers even if firmware is unresponsive — a mature way to reason about a system capable of generating lethal discharges. Shown as work in progress, not glossed over.</p>
-          <a class="project-link" href="https://github.com/Alberto0235/DRSSTC-Fiber-Optic-Interrupter" target="_blank" rel="noopener">View repository &rarr;</a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
+  <!-- ============ ABOUT ============ -->
   <section id="about" class="about">
     <div class="wrap">
-      <h2><span class="tag-no">02</span> About</h2>
-      <p class="about-bio">MSc Electronics Engineering student at Politecnico di Milano, currently on Erasmus exchange at Universitat Polit&egrave;cnica de Val&egrave;ncia. I focus on hardware design — power electronics, high-speed PCB layout, and signal integrity — and I'm working toward a hardware engineering role at a major tech company.</p>
+      <h2><span class="tag-no">01</span> About</h2>
+      <div class="about-grid">
+        <div class="about-bio">
+          <p>I'm an MSc student in Electronics Engineering at Politecnico di Milano, focused on hardware design — power electronics, high-speed PCB layout, and signal integrity. My projects run the full loop: schematic capture, layout, fabrication, assembly, and bench validation, not just simulation.</p>
+          <p>I completed my B.Sc. in Electronic Engineering at the University of Bologna (Cesena campus), followed by an Erasmus exchange at Universitat Polit&egrave;cnica de Val&egrave;ncia. I'm also a certified Cadence Student Ambassador.</p>
+          <p>Most of my bring-up and debugging happens in my home lab, equipped with oscilloscopes, multimeters, and other bench instrumentation.</p>
+          <p>I'm working toward a hardware engineering role at a major tech company, with an eye on Silicon Valley.</p>
+        </div>
+        <div class="about-side">
+          <div class="side-block">
+            <h4>Focus</h4>
+            <ul>
+              <li>Power Electronics</li>
+              <li>PCB Layout &amp; Fabrication</li>
+              <li>Signal Integrity</li>
+            </ul>
+          </div>
+          <div class="side-block">
+            <h4>Education</h4>
+            <ul>
+              <li>B.Sc. Electronic Engineering — University of Bologna (Cesena)</li>
+              <li>Erasmus Exchange — Universitat Polit&egrave;cnica de Val&egrave;ncia</li>
+              <li>M.Sc. Electronics Engineering — Politecnico di Milano (in progress)</li>
+            </ul>
+          </div>
+          <div class="side-block">
+            <h4>Credential</h4>
+            <ul>
+              <li>Certified Cadence Student Ambassador</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div class="skills-grid">
         <div class="skill-col">
           <h3>PCB / EDA</h3>
@@ -167,14 +123,12 @@
             <li>KiCad</li>
             <li>Altium Designer</li>
             <li>Cadence Allegro</li>
-            <li>Certified Cadence Student Ambassador</li>
           </ul>
         </div>
         <div class="skill-col">
           <h3>Hardware</h3>
           <ul>
             <li>PCB bring-up &amp; validation</li>
-            <li>Power electronics</li>
             <li>High-speed / controlled-impedance routing</li>
             <li>Bench measurement &amp; debug</li>
           </ul>
@@ -191,11 +145,114 @@
     </div>
   </section>
 
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="projects">
+    <div class="wrap">
+      <h2><span class="tag-no">02</span> Selected Projects</h2>
+
+      <!-- PROJECT 1 — USB HUB -->
+      <article class="project-card" data-status="validated">
+        <div class="project-media tech-frame">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <div class="img-placeholder">
+            <span>Replace with<br><code>images/usb-hub/pcb-top.jpg</code></span>
+          </div>
+          <span class="status-badge">Validated</span>
+        </div>
+        <div class="project-content">
+          <h3>USB 3.2 Gen 1 — 4-Port Hub</h3>
+          <p class="project-desc">A 6-layer, impedance-controlled USB 3.2 hub carried from schematic through fabrication, assembly, and bench validation — including full SuperSpeed enumeration and measured throughput.</p>
+          <dl class="spec-table">
+            <div class="spec-row"><dt>Controller</dt><dd>TI TUSB8044A</dd></div>
+            <div class="spec-row"><dt>Impedance</dt><dd>90&Omega; differential, SS/HS</dd></div>
+            <div class="spec-row"><dt>Stackup</dt><dd>6 layers, controlled impedance</dd></div>
+            <div class="spec-row"><dt>Cold socket</dt><dd>Hardware-only, no MCU</dd></div>
+            <div class="spec-row"><dt>Validation</dt><dd>5 Gbps SuperSpeed measured, DFM reviewed</dd></div>
+          </dl>
+          <p class="recruiter-note"><strong>Why it matters:</strong> the full loop closes here — signal integrity analysis, a real DFM review with a manufacturer, and bench measurements (102 MB/s SuperSpeed throughput, verified power-sequencing timing) rather than a simulation stopping at layout. Includes a Python HID-to-I2C EEPROM tool, written from scratch.</p>
+          <a class="project-link" href="https://github.com/Alberto0235/USB3.2-Hub-4Port" target="_blank" rel="noopener">View repository &rarr;</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 2 — GaN LLC CONVERTER -->
+      <article class="project-card" data-status="simulation">
+        <div class="project-media tech-frame">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <div class="img-placeholder">
+            <span>Replace with<br><code>images/gan-converter/eff-vs-power.png</code></span>
+          </div>
+          <span class="status-badge">Simulation</span>
+        </div>
+        <div class="project-content">
+          <h3>GaN Full-Bridge LLC Resonant Converter</h3>
+          <p class="project-desc">Full-bridge GaN LLC resonant converter designed as the front-end stage of a 400&nbsp;W photovoltaic micro-inverter — 97.88% simulated efficiency at 100&nbsp;kHz with zero-voltage switching across the full input range.</p>
+          <dl class="spec-table">
+            <div class="spec-row"><dt>Devices</dt><dd>GaN, EPC / GaN Systems</dd></div>
+            <div class="spec-row"><dt>Topology</dt><dd>Full-bridge LLC resonant</dd></div>
+            <div class="spec-row"><dt>Frequency range</dt><dd>100 kHz&ndash;1 MHz</dd></div>
+            <div class="spec-row"><dt>Tooling</dt><dd>Custom C sizing tool</dd></div>
+            <div class="spec-row"><dt>Validation</dt><dd>LTspice, vendor SPICE models</dd></div>
+          </dl>
+          <p class="recruiter-note"><strong>Why it matters:</strong> a real topology trade-off study — five candidate topologies compared on efficiency before choosing LLC — plus a custom C tool for resonant-tank sizing. Shown honestly as simulation-stage, not built hardware.</p>
+          <a class="project-link" href="https://github.com/Alberto0235/LLC-GaN-Microinverter" target="_blank" rel="noopener">View repository &rarr;</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 3 — STM32 BOARD (placeholder, repo pending) -->
+      <article class="project-card" data-status="team">
+        <div class="project-media tech-frame">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <div class="img-placeholder">
+            <span>Replace with<br><code>images/stm32-board/board.jpg</code></span>
+          </div>
+          <span class="status-badge">Team project</span>
+        </div>
+        <div class="project-content">
+          <h3>STM32F746ZG Application Board</h3>
+          <p class="project-desc">A three-person team project designing an STM32F746ZG application board in Altium Designer, using a shared Altium 365 workflow, during an Erasmus exchange at Universitat Polit&egrave;cnica de Val&egrave;ncia.</p>
+          <dl class="spec-table">
+            <div class="spec-row"><dt>MCU</dt><dd>STM32F746ZG</dd></div>
+            <div class="spec-row"><dt>Tooling</dt><dd>Altium Designer + Altium 365</dd></div>
+            <div class="spec-row"><dt>Team</dt><dd>3 engineers</dd></div>
+          </dl>
+          <p class="recruiter-note"><strong>Why it matters:</strong> most student portfolios show only solo work — this demonstrates a professional, PLM-style collaborative design workflow across a team.</p>
+          <a class="project-link" href="#" target="_blank" rel="noopener">TODO — add repo link once public &rarr;</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 4 — DRSSTC -->
+      <article class="project-card" data-status="wip">
+        <div class="project-media tech-frame">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <div class="img-placeholder">
+            <span>Replace with<br><code>images/drsstc/bringup.jpg</code></span>
+          </div>
+          <span class="status-badge">In progress</span>
+        </div>
+        <div class="project-content">
+          <h3>DRSSTC Fiber-Optic Interrupter</h3>
+          <p class="project-desc">A galvanically isolated, hand-soldered STM32F405 control board for a Tesla-coil driver, with a hardware-only E-brake safety chain and controlled-impedance USB / FSMC / SDIO routing. Currently mid bring-up.</p>
+          <dl class="spec-table">
+            <div class="spec-row"><dt>MCU</dt><dd>STM32F405</dd></div>
+            <div class="spec-row"><dt>Isolation</dt><dd>Fiber-optic, galvanic</dd></div>
+            <div class="spec-row"><dt>Safety</dt><dd>Hardware E-brake, firmware-independent</dd></div>
+            <div class="spec-row"><dt>Stackup</dt><dd>4 layers, 90&Omega; USB / 50&Omega; FSMC-SDIO</dd></div>
+            <div class="spec-row"><dt>EDA</dt><dd>KiCad</dd></div>
+          </dl>
+          <p class="recruiter-note"><strong>Why it matters:</strong> the safety architecture. The E-brake physically de-energizes the output and halts MCU timers even if firmware is unresponsive — a mature way to reason about a system capable of generating lethal discharges.</p>
+          <a class="project-link" href="https://github.com/Alberto0235/DRSSTC-Fiber-Optic-Interrupter" target="_blank" rel="noopener">View repository &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
   <section id="contact" class="contact">
     <div class="wrap">
       <h2><span class="tag-no">03</span> Contact</h2>
       <ul class="contact-list">
-        <li><span>Email</span><a href="mailto:alberto.marrone02@gmail.com">alberto.marrone02@gmail.com</a></li>
+        <li><span>Email</span><a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a></li>
         <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/alberto-marrone-444192274" target="_blank" rel="noopener">linkedin.com/in/alberto-marrone-444192274</a></li>
         <li><span>GitHub</span><a href="https://github.com/Alberto0235" target="_blank" rel="noopener">github.com/Alberto0235</a></li>
       </ul>
